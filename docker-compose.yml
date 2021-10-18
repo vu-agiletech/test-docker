@@ -13,5 +13,6 @@ services:
   testdockermongo:
     image: mongo
     restart: always
+    tty: true #keep image
     # ports:
     #   - "27018:27017"
