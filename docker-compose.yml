@@ -4,7 +4,14 @@ services:
     build: .
     ports: 
       - 8888:8888
+    environment:
+      - MONGO_URI=mongodb://testdockermongo:27017/test-docker
     volumes:
       - .:/code
+    depends_on:
+      - testdockermongo
   testdockermongo:
-    image: "mongo-express"
+    image: mongo
+    restart: always
+    # ports:
+    #   - "27018:27017"
