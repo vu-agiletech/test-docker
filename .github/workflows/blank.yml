@@ -31,4 +31,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       -  name: Setup Node.js environment
-         uses: actions/setup-node@v12.4.1
+         uses: actions/setup-node@v12.13.0
