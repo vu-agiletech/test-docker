@@ -37,7 +37,7 @@ jobs:
           node-version: 12.13.0
       - name: Deploy stagging
         if: github.ref == 'refs/heads/main'
-        uses: appleboy/ssh-action@main
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SV }}
           username: ${{ secrets.USER }}
